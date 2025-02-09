@@ -17,7 +17,7 @@ namespace QRCode
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string qrContent = "https://www.youtube.com/live/DaTyCjsAinY";
+            string qrContent = "https://www.instagram.com/bhupesh1898";
 
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
 
