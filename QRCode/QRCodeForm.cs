@@ -13,6 +13,7 @@ namespace QRCode
         public QRCodeForm()
         {
             InitializeComponent();
+            this.Load += new EventHandler(Form1_Load);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -49,14 +50,6 @@ namespace QRCode
             catch (Exception ex)
             {
                 Console.WriteLine("Error opening the file: " + ex.Message);
-            }
-
-            [STAThread]
-            static void Main()
-            {
-                Application.EnableVisualStyles(); // Enable visual styles for the application
-                Application.SetCompatibleTextRenderingDefault(false); // Set text rendering to default
-                Application.Run(new QRCodeForm()); // Run the form as the main application window
             }
 
         }
